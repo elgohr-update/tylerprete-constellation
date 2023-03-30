@@ -54,7 +54,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish docker keytool image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: constellationprotocol/keytool
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -63,7 +63,7 @@ jobs:
           tag_semver: true
 
       - name: Publish docker wallet image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: constellationprotocol/wallet
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -72,7 +72,7 @@ jobs:
           tag_semver: true
 
       - name: Publish docker node image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: constellationprotocol/node
           username: ${{ secrets.DOCKER_USERNAME }}
